@@ -291,7 +291,7 @@ These scenarios are the minimum acceptance tests. Your design should make each o
 | Frontend | ReactJS 18 (TypeScript) | Single-page application. |
 | Identity and access | Built into the application | Accepted alternative: Keycloak (OpenID Connect). Recommended only if you have used it before. See the note below the table. |
 | API contract | OpenAPI 3.1 | Generated from the backend and published with the app. |
-| Packaging | Docker + Docker Compose | See NFR-OPS-1. |
+| Packaging | Podman + Podman Compose | Docker is not permitted for compliance reasons. See NFR-OPS-1. |
 | Load testing | k6 or Locust | Used to verify section 7.2. |
 
 **If you choose Keycloak:** it may satisfy AUTH-2 to AUTH-4, AUTH-7 and AUTH-8 through configuration instead of code. Your design must then state how creating, deactivating and changing the role of an employee in Kairos stays in sync with Keycloak (EMP-1, EMP-4, AUTH-6), and how Keycloak is included in the one-command local start (NFR-OPS-1). Role checks on Kairos data (section 3.3, NFR-SEC-2, NFR-SEC-3) are always enforced by the Kairos backend, whichever option you choose.
