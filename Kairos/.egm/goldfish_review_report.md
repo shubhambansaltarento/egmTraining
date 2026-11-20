@@ -1,3 +1,5 @@
+**Status: resolved** — "auto accept" applied all 28 PROPOSE FIX items to `Kairos/docs/designs/kairos.md` on 2026-11-19. A6 was applied as the recommended Q3-B edit, not the fallback.
+
 # Goldfish Annotated Review Report
 
 **Target:** `Kairos/docs/designs/kairos.md` (`full file`, lines 1-1704)
